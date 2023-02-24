@@ -1,0 +1,107 @@
+.cardItem-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  box-shadow: 2px 2px 7px 2px rgba(128, 128, 128, 0.589);
+  padding: 1rem 0.5rem;
+  gap: 3rem;
+  height:max-content;
+  width: 40rem;
+  margin: 2rem 0;
+}
+
+.cardItem-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: .7rem;
+}
+
+.cardItem-img-container{
+  /* height: 100%;
+  width: 30%;  */
+}
+
+.cart-image {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.incr-decr-btns {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 1.2rem;
+}
+
+.description {
+  font-size:.8rem;
+  margin-left: 0.2rem;
+}
+
+.cardItem-remove-btn {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-cart-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.sub-cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.price-details-main-container {
+  /* border: 2px solid black; */
+  box-shadow: 1px 1px 6px 2px rgba(128, 128, 128, 0.792);
+  padding: 0.7rem;
+  height: max-content;
+}
+
+.price-items-container,
+.price-delivery-container,
+.price-discount-container,
+.price-amount-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  margin: 1rem 0;
+}
+
+.price-details-main-container hr {
+  margin: 0.5rem 0;
+}
+
+.saved-money {
+  font-size: small;
+}
+
+.place-order-container {
+  margin: 1rem 0;
+}
+
+.place-order-container button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+}

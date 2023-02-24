@@ -1,0 +1,48 @@
+
+.card{
+    height: 19rem;
+    /* border: 2px solid black; */
+    width: 13rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 7px 3px rgba(128, 128, 128, 0.315);
+}
+
+.card img{
+    height: 50%;
+    object-fit: contain;
+    padding: 8px;
+}
+
+.card-body{
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-text{
+    font-size: small;
+}
+
+.price{
+    font-size: small;
+    font-weight: bold;
+}
+
+.rating{
+    font-size: small;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 4px;
+}
+
+.cart-btn{
+    /* width: 5rem; */
+    padding: .4rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+

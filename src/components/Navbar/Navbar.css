@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    padding: 0 1rem;
+    background-color: #0f172a;
+    color: white;
+    height: 3.5rem;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    
+}
+
+.subNav{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    /* margin-right: 1rem; */
+}
+
+button{
+    background-color: #0f172a;
+    color: white;
+    border: none;
+}
