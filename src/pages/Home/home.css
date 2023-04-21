@@ -14,6 +14,7 @@
 .filter-container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 hr{
@@ -54,5 +55,5 @@ hr{
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center;
+    justify-content: flex-start;
 }

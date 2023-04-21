@@ -37,6 +37,10 @@ const Login = () => {
 
   return (
     <div className="login-main-container">
+      <div>
+        <p><strong>Login Id:</strong> rohitgawade0102@gmail.com</p>
+        <strong>Pass:</strong> Rohit@123
+      </div>
       <form type='submit'>
       <div className="login-container">
         <div className="login-heading-container">
