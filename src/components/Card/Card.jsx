@@ -15,8 +15,6 @@ const Card = ({eachCartdata}) => {
     
   }
 
-  
-
   return (
       <div className="card">
         <img src={eachCartdata.image} className="card-img-top" alt="..." />
