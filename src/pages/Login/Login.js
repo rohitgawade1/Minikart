@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
+import { GoogleLogin } from "@react-oauth/google";
 const Login = () => {
 
   sessionStorage.setItem('user', '123');
@@ -25,7 +26,7 @@ const Login = () => {
   const mainPass = sessionStorage.getItem('pass')
 
   const validateForm = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     if (userEmail === mainEmail && pass === mainPass) {
       // alert('yes')
       navigate('/home')
@@ -72,7 +73,21 @@ const Login = () => {
           </div>
           <div className="signin-btn-container">
             <button onClick={validateForm} type="submit" id="signin-btn">Sign In</button>
+
+            <br />
+            <br />
+            <GoogleLogin
+              onSuccess={credentialResponse => {
+                // console.log("credentialResponse", credentialResponse);
+                navigate('/home')
+                sessionStorage.setItem('Auth', 'asdfghjklk');
+              }}
+              onError={() => {
+                console.log('Login Failed');
+              }}
+            />;
           </div>
+
         </div>
       </form>
     </div>
