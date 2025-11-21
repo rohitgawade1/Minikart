@@ -21,8 +21,8 @@ const Login = () => {
     setPass(e.target.value)
   }
 
-  const mainEmail = sessionStorage.getItem('email');
-  const mainPass = sessionStorage.getItem('password')
+  const mainEmail = sessionStorage.getItem('user');
+  const mainPass = sessionStorage.getItem('pass')
 
   const validateForm = (e) => {
     e.preventDefault();
@@ -34,13 +34,15 @@ const Login = () => {
     else {
       setError('Invalid Email and Password');
     }
+
+    console.log(mainEmail, mainPass, userEmail, pass)
   }
 
   return (
     <div className="login-main-container">
       <div>
-        <p><strong>Login Id:</strong> rohitgawade0102@gmail.com</p>
-        <strong>Pass:</strong> Rohit@123
+        <p><strong>Login Id:</strong> 123</p>
+        <strong>Pass:</strong> 123
       </div>
       <form type='submit'>
         <div className="login-container">
