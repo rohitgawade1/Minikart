@@ -98,7 +98,7 @@ const Register = () => {
         const newUser = { EmailID, Password };
         setUsers([...users, newUser]);
 
-        localStorage.setItem("users", JSON.stringify(users));
+        // localStorage.setItem("users", JSON.stringify(users));
         toast.success("User registered successfully!");
 
         // Clear fields after success
@@ -107,9 +107,13 @@ const Register = () => {
     }
 
     useEffect(() => {
-        const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
-        setUsers(storedUsers);
-    }, []);
+        localStorage.setItem("users", JSON.stringify(users));
+    }, [users]);
+
+    // useEffect(() => {
+    //     const storedUsers = JSON.parse(localStorage.getItem("users")) || [];
+    //     setUsers(storedUsers);
+    // }, []);
 
     return (
         <div className="modal-bg">
