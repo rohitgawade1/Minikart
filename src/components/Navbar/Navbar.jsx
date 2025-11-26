@@ -14,14 +14,14 @@ export const Navbar = () => {
 
   return (
     <nav className="navbar">
-        <h1>MiniKart</h1>
-        <div className="subNav">
-        <Link style={{color:'white', textDecoration:'none'}} to="/home">Home</Link>
-        <Link style={{color:'white', textDecoration:'none'}} to="/Cart">Cart</Link>
-        <span style={{color:'white', textDecoration:'none'}} onClick={handleLogOut}>Log out</span>
+      <h1>MiniKart</h1>
+      <div className="subNav">
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/home">Home</Link>
+        <Link style={{ color: 'white', textDecoration: 'none' }} to="/Cart">Cart</Link>
+        <span style={{ color: 'white', textDecoration: 'none', cursor: 'pointer' }} onClick={handleLogOut}>Log out</span>
         {/* <button>Home</button>
         <button>Cart</button> */}
-        </div>
+      </div>
     </nav>
   );
 };
