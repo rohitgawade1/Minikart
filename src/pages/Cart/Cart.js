@@ -87,7 +87,7 @@ const Cart = () => {
               <button onClick={handlePayment} disabled={isLoading}>
                 Pay Now
               </button>
-              <button>Place Order</button>
+              {/* <button>Place Order</button> */}
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Card from "../../components/Card/Card";
 import { Navbar } from "../../components/Navbar/Navbar";
 import "./home.css";
+import { PacmanLoader } from "react-spinners";
 
 const Home = () => {
   const mainData = useSelector((state) => state.MainData);
@@ -125,12 +126,24 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="cards-container">
-          {mainData.map((eachCartdata) => {
-            return <Card key={eachCartdata.id} eachCartdata={eachCartdata} />;
-          })}
-        </div>
-      </div>
+
+        {
+          mainData ?
+            <div div className="cards-container">
+              {mainData.map((eachCartdata) => {
+                return <Card key={eachCartdata.id} eachCartdata={eachCartdata} />;
+              })}
+            </div>
+            :
+            <PacmanLoader
+              color="#070707"
+              size={1150}
+            />
+        }
+
+
+
+      </div >
     </>
   );
 };

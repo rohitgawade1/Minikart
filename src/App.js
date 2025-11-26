@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route, useLocation, Navigate, Outlet } from "rea
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Login from './pages/Login/Login'
+import Register from "./pages/Login/Register";
+import LoginModal from "./pages/Login/LoginModal";
 
 function App() {
 
@@ -32,7 +34,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route index element={<Login />} />
+          <Route index element={<Register />} />
+          <Route path="/LoginModal" element={<LoginModal />} />
           <Route exact element={<RequiredAuth />}>
             <Route path="/home" element={<Home />} />
             <Route path="/cart" element={<Cart />} />

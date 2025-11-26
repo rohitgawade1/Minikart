@@ -1,0 +1,182 @@
+/* Background */
+.modal-bg {
+  width: 100vw;
+  height: 100vh;
+  /* background: linear-gradient(120deg, #ba8b02, #181818, #b24592); */
+  background: linear-gradient(120deg, #ba8b0254, #92406a, #5d2f95);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal */
+.modal-container {
+  width: 400px;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Circle */
+.circle {
+  width: 40px;
+  height: 40px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Heading */
+h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.subtitle a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Social Buttons */
+.social-btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  background: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.fb-btn {
+  border-color: #1877f2;
+}
+
+.google-btn {
+  border-color: #db4437;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.divider span {
+  background: white;
+  padding: 0 10px;
+  color: #777;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+  left: 0;
+  top: 50%;
+}
+
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+  right: 0;
+  top: 50%;
+}
+
+/* Input section */
+.small-text {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+label {
+  font-size: 14px;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Create Button */
+.create-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: #c7c7c7;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.TextBlack {
+  color: #181818;
+}
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 12px 40px 12px 12px; /* space for icon */
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 55%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+  color: rgb(83, 83, 83);
+}
